@@ -1,1 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.project.active {
+    max-height: 1000px;
+}
+
+.project h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project .description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+button:hover {
+    background-color: #6b0ad4;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-btn {
+    margin-right: 10px;
+}
+
+.next-btn {
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
   
